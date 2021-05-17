@@ -21,7 +21,7 @@ int main(int argc, char *argv[]){
         strcpy(passwordinput, argv[2]);
         char username[20], password[20];
 
-        FILE *fr= fopen("login.bin", "rb");
+        FILE *fr= fopen("Database/login.bin", "rb");
 
         if((fr)==NULL){
             printf("gagal membuka file");
