@@ -6,6 +6,7 @@
 int soal(){
     int sum, total=0,uang;
     char jawaban;
+    
     int u=5;
     while(u>=0){
         printf(" %d\n", u);
