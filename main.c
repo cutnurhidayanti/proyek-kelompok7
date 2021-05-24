@@ -6,6 +6,13 @@
 int soal(){
     int sum, total=0,uang;
     char jawaban;
+    int u=5;
+    while(u>=0){
+        printf(" %d\n", u);
+        u--;
+        Sleep(1000);
+        system("cls");
+    }
 
     for(int i=1; i<=15; i++){
         switch(i){
