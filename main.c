@@ -434,7 +434,21 @@ int main(int argc, char *argv[]){
 
             if(pilihan == 1){
                 //disini akan dimunculkan Peraturan GAME
-                printf("Peraturan gamenya............................\n\n");
+                FILE *UU = fopen("undang2.txt", "r");
+
+                if((UU)==NULL){
+                    printf("gagal membuka file peraturan game");
+                    return EXIT_FAILURE;
+                }
+
+                int c;
+                while((c=fgetc(UU)) != EOF){
+                    printf("%c",c);
+                }
+                printf("\n");
+
+                fclose(UU);
+                
                 printf("Tekan Enter untuk Melanjutkan...");getchar();
             }else if(pilihan == 2){
                 //disini GAMEnya akan dimulai
